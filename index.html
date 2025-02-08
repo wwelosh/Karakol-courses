@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курсы KG</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Курсы.KG</div>
+      <ul class="menu">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#courses">Курсы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#volunteering">Волонтерство</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Добро пожаловать на Курсы.KG</h1>
+    <p>Учитесь новым навыкам для лучшего будущего</p>
+    <a href="#courses" class="btn">Посмотреть курсы</a>
+  </section>
+
+  <section id="about">
+    <h2>О нас</h2>
+    <p>Мы предлагаем лучшие образовательные программы по языкам, IT, спорту и личностному развитию.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Наши курсы</h2>
+
+    <div class="course-card">
+      <h3>Языки</h3>
+      <p>Изучайте инотранные языки с профессиональными преподавателями.</p>
+      <a href="#" class="btn" onclick="showLanguages()">Подробнее</a>
+    </div>
+
+    <div class="course-card">
+      <h3>Программирование</h3>
+      <p>Станьте разработчиком с нуля!</p>
+      <a href="#" class="btn">Подробнее</a>
+    </div>
+
+    <div class="course-card">
+      <h3>Спорт</h3>
+      <p>Движение — это жизнь, начни сегодня!</p>
+      <a href="#" class="btn">Подробнее</a>
+    </div>
+
+    <div class="course-card">
+      <h3>Ораторское искусство</h3>
+      <p>Каждое слово — шаг к влиянию!</p>
+      <a href="#" class="btn">Подробнее</a>
+    </div>
+
+    <div class="course-card">
+      <h3>Шахматы</h3>
+      <p>Думай на несколько ходов вперед!</p>
+      <a href="#" class="btn">Подробнее</a>
+    </div>
+
+
+   <!-- Модальное окно для выбора языков -->
+<div id="languageModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3>Выберите язык для изучения:</h3>
+    <ul id="languageList">
+      <!-- Список языков будет добавляться через JavaScript -->
+    </ul>
+  </div>
+</div>
+
+<!-- Модальное окно для информации о языке -->
+<div id="infoModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeInfoModal()">&times;</span>
+    <div id="infoContent">
+      <!-- Сюда будет добавляться информация о выбранном языке -->
+    </div>
+  </div>
+</div>
+
+<div class="course-card">
+  <h3>Языки</h3>
+  <p>Изучайте иностранные языки с профессиональными преподавателями.</p>
+  <a href="#" class="btn" onclick="showLanguages()">Подробнее</a>
+</div>
+
+
+    <!-- Можно добавить еще карточки -->
+  </section>
+
+  <footer id="contact">
+    <h2>Контакты</h2>
+    <p>Email: info@courses.kg | Телефон: +996 123 456 789</p>
+  </footer>
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
